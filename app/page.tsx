@@ -98,11 +98,11 @@ function StoreDoor({ onComplete }: { onComplete: () => void }) {
     if (triggered.current) return;
     triggered.current = true;
     setPhase('opening');
-    // Doors swing fully open after 2.6s → then fade scene out
+    // Doors swing fully open after 2.5s → then fade scene out
     setTimeout(() => {
       setPhase('exiting');
-      setTimeout(onComplete, 1100);
-    }, 2600);
+      setTimeout(onComplete, 900);
+    }, 2500);
   };
 
   // Auto-open after 2s
