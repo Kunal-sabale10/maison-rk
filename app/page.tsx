@@ -809,7 +809,7 @@ function CollectionPanel({
               fontSize:'clamp(12px,1.15vw,15px)', lineHeight:1.88,
               fontFamily:'Inter,sans-serif', maxWidth:'420px', marginTop:'18px',
               color: collection.textColor,
-              opacity: visible ? 0.72 : 0, transition:'opacity 1.05s ease 0.68s',
+              opacity: visible ? 0.75 : 0, transition:'opacity 1.05s ease 0.68s',
             }}
           >
             {collection.description}
