@@ -172,6 +172,53 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
+/* =====================================================
+   STORE DOOR SCENE — Layout & Utility Classes
+   ===================================================== */
+
+/* Full-screen fixed overlay with 3D perspective for door swing */
+.door-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0a0809;
+  perspective: 1400px;
+  overflow: hidden;
+}
+
+/* 3D door panels — transform-origin anchors the hinge axis */
+.door-left {
+  transform-origin: left center;
+  transform-style: preserve-3d;
+}
+.door-right {
+  transform-origin: right center;
+  transform-style: preserve-3d;
+}
+
+/* Trigger door animations when .opening class is added */
+.door-scene .door-left.opening {
+  animation: doorOpenLeft 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.door-scene .door-right.opening {
+  animation: doorOpenRight 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Brass handle glow loop */
+.door-handle {
+  animation: goldShimmer 2.5s ease-in-out infinite;
+}
+
+/* Animated brand wordmark */
+.logo-glow {
+  animation: logoGlow 3s ease-in-out infinite;
+}
+
+/* Floating dust motes */
+.dust-mote {
+  animation: dustDrift linear infinite;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
