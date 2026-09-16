@@ -354,3 +354,8 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* Global smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
