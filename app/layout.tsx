@@ -18,12 +18,28 @@ export const metadata: Metadata = {
   title: "Maison RK | Premium Minimalist Luxury E-Commerce",
   description: "Experience minimalist luxury fashion with Maison RK. Explore double-breasted silk trench coats, hand-crafted calfskin leather bags, and premium everyday essentials.",
   metadataBase: new URL("https://maisonrk.com"),
+  keywords: ["luxury fashion", "minimalist clothing", "designer", "Florence atelier", "silk coats"],
+  authors: [{ name: "Maison RK Team" }],
   openGraph: {
     title: "Maison RK | Premium Minimalist Luxury E-Commerce",
     description: "Experience minimalist luxury fashion with Maison RK.",
     type: "website",
     locale: "en_US",
     siteName: "Maison RK",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Maison RK Premium Fashion",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maison RK | Luxury Fashion",
+    description: "Minimalist luxury essentials designed for fluidity and engineered for comfort.",
+    images: ["/og-image.jpg"],
   },
 };
 
