@@ -110,6 +110,7 @@ export default function Navbar() {
           {/* Mobile Hamburguer Toggle */}
           <div className="flex md:hidden">
             <button
+              aria-label="Open mobile menu"
               onClick={() => setMobileMenuOpen(true)}
               className="text-foreground hover:text-muted-foreground transition-colors cursor-pointer"
             >
@@ -122,13 +123,14 @@ export default function Navbar() {
             <Link 
               href="/" 
               className="text-xs uppercase tracking-[0.35em] font-bold transition-opacity hover:opacity-80"
+              aria-label="Maison RK Home"
             >
               MAISON RK
             </Link>
           </div>
 
           {/* Spaced Apple-Style Navigation Links: Home | Shop | About | Cart */}
-          <nav className="hidden md:flex items-center space-x-12 text-[10px] uppercase tracking-[0.25em] font-semibold">
+          <nav className="hidden md:flex items-center space-x-12 text-[10px] uppercase tracking-[0.25em] font-semibold" aria-label="Main Navigation">
             <Link href="/" className="link-hover-effect text-foreground">Home</Link>
             <Link href="/products" className="link-hover-effect text-foreground">Shop</Link>
             <Link href="/#manifesto" className="link-hover-effect text-foreground" onClick={() => {
@@ -138,6 +140,7 @@ export default function Navbar() {
             <button 
               onClick={() => setIsCartOpen(true)} 
               className="link-hover-effect text-foreground uppercase tracking-[0.25em] font-semibold cursor-pointer"
+              aria-label={`Shopping cart with ${cartCount} items`}
             >
               Cart ({cartCount})
             </button>
@@ -148,6 +151,7 @@ export default function Navbar() {
             
             {/* Search */}
             <button
+              aria-label="Toggle search"
               onClick={() => setSearchOpen(!searchOpen)}
               className="text-foreground hover:text-muted-foreground transition-colors hover:scale-105 active:scale-95 cursor-pointer p-0.5"
             >
@@ -156,6 +160,7 @@ export default function Navbar() {
 
             {/* Dark/Light mode toggle */}
             <button
+              aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
               onClick={toggleTheme}
               className="text-foreground hover:text-muted-foreground transition-colors hover:scale-105 active:scale-95 cursor-pointer p-0.5"
             >
