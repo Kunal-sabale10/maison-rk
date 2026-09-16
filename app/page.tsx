@@ -723,6 +723,7 @@ function CollectionPanel({
         <img
           src={collection.image}
           alt={collection.tag}
+          loading="lazy"
           className="collection-img-zoom w-full h-full object-cover"
           style={{ transformOrigin: isEven ? 'right center' : 'left center' }}
         />
@@ -1015,7 +1016,7 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               <div className="md:col-span-1 flex flex-col gap-8">
                 <Link href="/products?category=Outerwear" className="group relative aspect-[3/4] bg-background border border-border/30 overflow-hidden block">
-                  <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=600" alt="Outerwear" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=600" alt="Outerwear" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/35 group-hover:bg-black/15 transition-all duration-300" />
                   <div className="absolute bottom-6 left-6 text-white">
                     <h3 className="text-[10px] font-bold tracking-[0.25em] uppercase">OUTERWEAR</h3>
@@ -1025,7 +1026,7 @@ export default function LandingPage() {
               </div>
               <div className="md:col-span-1 md:mt-16 flex flex-col gap-8">
                 <Link href="/products?category=Apparel" className="group relative aspect-[3/4] bg-background border border-border/30 overflow-hidden block">
-                  <img src="https://images.unsplash.com/photo-1574164904299-3a102b110380?q=80&w=600" alt="Apparel" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src="https://images.unsplash.com/photo-1574164904299-3a102b110380?q=80&w=600" alt="Apparel" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/35 group-hover:bg-black/15 transition-all duration-300" />
                   <div className="absolute bottom-6 left-6 text-white">
                     <h3 className="text-[10px] font-bold tracking-[0.25em] uppercase">APPAREL</h3>
@@ -1035,12 +1036,12 @@ export default function LandingPage() {
               </div>
               <div className="md:col-span-1 flex flex-col gap-10">
                 <Link href="/products?category=Accessories" className="group relative aspect-[4/5] bg-background border border-border/30 overflow-hidden block">
-                  <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600" alt="Accessories" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600" alt="Accessories" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/35 group-hover:bg-black/15 transition-all duration-300" />
                   <div className="absolute bottom-6 left-6 text-white"><h3 className="text-[10px] font-bold tracking-[0.25em] uppercase">ACCESSORIES</h3></div>
                 </Link>
                 <Link href="/products?category=Footwear" className="group relative aspect-[4/5] bg-background border border-border/30 overflow-hidden block">
-                  <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=600" alt="Footwear" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=600" alt="Footwear" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/35 group-hover:bg-black/15 transition-all duration-300" />
                   <div className="absolute bottom-6 left-6 text-white"><h3 className="text-[10px] font-bold tracking-[0.25em] uppercase">FOOTWEAR</h3></div>
                 </Link>
